@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Se torne um player!!</title>
+</head>
+<body id="fundo">
+    <aside id="cabeçalho">
+        <img src="../img/logoestendida.png" id="logo">
+   </aside>
+   <nav id="menu">
+       <ul>
+           <li><a href="../index.html">Home</a></li>
+           <li><a href="../html/server.html">Servers</a></li>
+           <li><a href="../html/chat.html">Chats</a></li>
+           <li><a href="../html/cadastro.html">Cadastro</a>
+               <ul>
+                   <li><a href="../html/dev.html">Developer</a></li>
+                   <li><a href="../html/player.html">Player</a></li>
+                   <li><a href="../html/login.html">Login</a></li>
+               </ul>
+           </li>
+           <li><a href="../html/contato.html">Contact</a></li>
+       </ul>
+   </nav>
+   <h1 id="formtitle">Complete o cadastro para ter acesso completo ao site:</h1>
+<div id="formplayer">
+   <form type="text" name="meu_form" method="post" action="../php/salvar_player.php">
+    <label id="nomeid" for="name">Nome: </label>
+    <input type="text" id="nomeidr" placeholder="Gabriel Araujo" required="required" name="nome">
+    <label id="emailid" for="email">Email: </label>
+    <input type="email" id="emailidr" placeholder="example@gmail.com" required="required" name="email">
+    <label id="senhaid" for="senha">Senha: </label>
+    <input type="password" id="senhaidr" placeholder="************" required="required" name="senha">
+    <label id="idadeid" for="idade">Idade: </label>
+    <input type="number" id="idadeidr" placeholder="16" required="required" name="idade">
+    <label id="sexoid" for="sexo">Sexo: </label>
+    <input type="text" id="sexoidr" placeholder="masculino" required="required" name="sexo">
+    
+    <input type="submit" id="Cadastrar" value="Cadastrar" action="../index">
+</form>
+
+<a href="../html/dev.html" id="devreference">É ou pretende se tornar um desenvolvedor de servidor? Então se cadastre nessa area</a>
+<a href="../html/login.html" id="login">Logar na conta</a>
+</div>
+</body>
+</html>
